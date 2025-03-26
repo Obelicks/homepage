@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emil Christian Bløcher - IT Professional</title>
+    <meta name="description" content="Emil Christian Bløcher's personal homepage showcasing his IT skills, experience, and contact information.">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             background-image: url('images/cyber-sec.jpg');
@@ -47,6 +48,19 @@
             bottom: 0;
             width: 100%;
         }
+        footer a {
+            color: #1DA1F2; /* Default color for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a[href*="github"] {
+            color: #6e5494; /* Specific color for GitHub links */
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Add underline on hover for better interactivity */
+        }
         @media (max-width: 600px) {
             body {
                 font-size: 14px;
@@ -61,19 +75,19 @@
     </style>
 </head>
 <body>
-    <header>
+    <header role="banner">
         <h1>Emil Christian Bløcher</h1>
         <p>Cybersecurity Professional</p>
     </header>
     <div class="container">
         <img src="images/personal.jpg" alt="Emil Christian Bløcher" class="profile-img" loading="lazy">
-        <main>
+        <main role="main">
             <section>
                 <h2>About Me</h2>
                 <p>
-                    My name is Emil, and I have a deep passion for computers. My journey began during the early days of 
-                    *World of Warcraft: The Burning Crusade*, where I spent countless hours immersed in the game. 
-                    I have always been fascinated by the world of computers—how they work and, equally, how they can break.
+                    My name is Emil Christian Bløcher, and I am deeply passionate about computers and technology. 
+                    My journey into IT began during the early days of *World of Warcraft: The Burning Crusade*, 
+                    where I developed a fascination with how computers work—and how they can be improved or secured.
                 </p>
             </section>
             <section>
@@ -82,13 +96,7 @@
                     <li>Bachelor's Degree in Computer Science from SDU - Odense</li>
                     <li>Penetration Testing</li>
                     <li>Algorithms and Data Structures</li>
-                    <li>Programming Languages:</li>
-                    <ul>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>Tcl</li>
-                        <li>Assembler</li>
-                    </ul>
+                    <li>Programming Languages: Python, C, Tcl, Assembler</li>
                     <li>Git</li>
                     <li>Linux Administration (Sudoer)</li>
                     <li>Cloverleaf Integration Engine</li>
@@ -118,15 +126,23 @@
                     which processes millions of data transactions between healthcare software systems across the region.
                 </p>
             </section>
+            <section>
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:bloechrr@gmail.com">bloechrr@gmail.com</a></p>
+            </section>
+            <section>
+                <h2>GitHub</h2>
+                <p>You can find my projects on <a href="https://github.com/Obelicks" target="_blank">GitHub</a>.</p>
+            </section>
         </main>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:bloechrr@gmail.com">bloechrr@gmail.com</a></p>
-        <h2>GitHub</h2>
-        <p>You can find my projects on <a href="https://github.com/Obelicks" target="_blank">GitHub</a>.</p>
-        <br>
     </div>
-    <footer>
-        &copy; <span id="year"></span> Emil Christian Bløcher - Helped by ChatGPT (please don't make me obsolete!)
+    <footer role="contentinfo">
+        <p>&copy; <span id="year"></span> Emil Christian Bløcher</p>
+        <p>
+            Connect with me: 
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/Obelicks" target="_blank">GitHub</a>
+        </p>
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
